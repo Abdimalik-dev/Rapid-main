@@ -1,0 +1,19 @@
+{
+    "env": {
+        "browser": true,
+        "mocha": true
+    },
+    "globals": {
+        "expect": true,
+        "fakeFetch": true,
+        "happen": false,
+        "iD": false,
+        "Rapid": false,
+        "sdk": false,
+        "sinon": false,
+        "fetchMock": true
+    },
+    "rules": {
+        "no-unused-expressions": "off"
+    }
+}
