@@ -28,6 +28,39 @@ gaze(['css/**/*.css'], (err, watcher) => {
   watcher.on('all', () => buildCSS());
 });
 
+/* eslint-disable no-console */
+import chalk from 'chalk';
+import gaze from 'gaze/lib/gaze.js';
+import StaticServer from 'static-server/server.js';
+
+import { buildCSS } from './build_css.js';
+
+
+gaze(['css/**/*.css'], (err, watcher) => {
+  watcher.on('all', () => buildCSS());
+});
+
+const server = new StaticServer({ rootPath: process.cwd(), port: 8080, followSymlink: true });
+server.start(() => {
+  console.log(chalk.yellow(`Listening on ${server.port}`));
+});
+/* eslint-disable no-console */
+import chalk from 'chalk';
+import gaze from 'gaze/lib/gaze.js';
+import StaticServer from 'static-server/server.js';
+
+import { buildCSS } from './build_css.js';
+
+
+gaze(['css/**/*.css'], (err, watcher) => {
+  watcher.on('all', () => buildCSS());
+});
+
+const server = new StaticServer({ rootPath: process.cwd(), port: 8080, followSymlink: true });
+server.start(() => {
+  console.log(chalk.yellow(`Listening on ${server.port}`));
+});
+
 const server = new StaticServer({ rootPath: process.cwd(), port: 8080, followSymlink: true });
 server.start(() => {
   console.log(chalk.yellow(`Listening on ${server.port}`));
@@ -56,6 +89,48 @@ import gaze from 'gaze/lib/gaze.js';
 import StaticServer from 'static-server/server.js';
 
 import { buildCSS } from './build_css.js';
+
+
+
+
+
+/* eslint-disable no-console */
+import chalk from 'chalk';
+import gaze from 'gaze/lib/gaze.js';
+import StaticServer from 'static-server/server.js';
+
+import { buildCSS } from './build_css.js';
+
+
+gaze(['css/**/*.css'], (err, watcher) => {
+  watcher.on('all', () => buildCSS());
+});
+
+const server = new StaticServer({ rootPath: process.cwd(), port: 8080, followSymlink: true });
+server.start(() => {
+  console.log(chalk.yellow(`Listening on ${server.port}`));
+});
+/* eslint-disable no-console */
+import chalk from 'chalk';
+import gaze from 'gaze/lib/gaze.js';
+import StaticServer from 'static-server/server.js';
+
+import { buildCSS } from './build_css.js';
+
+
+gaze(['css/**/*.css'], (err, watcher) => {
+  watcher.on('all', () => buildCSS());
+});
+
+const server = new StaticServer({ rootPath: process.cwd(), port: 8080, followSymlink: true });
+server.start(() => {
+  console.log(chalk.yellow(`Listening on ${server.port}`));
+});
+
+
+
+
+
 
 
 gaze(['css/**/*.css'], (err, watcher) => {
