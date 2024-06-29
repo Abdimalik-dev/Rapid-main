@@ -20,6 +20,11 @@ server.start(() => {
 import chalk from 'chalk';
 import gaze from 'gaze/lib/gaze.js';
 import StaticServer from 'static-server/server.js';
+import chalk from 'chalk';
+import gaze from 'gaze/lib/gaze.js';
+import StaticServer from 'static-server/server.js';
+
+import { buildCSS } from './build_css.js';
 
 import { buildCSS } from './build_css.js';
 
